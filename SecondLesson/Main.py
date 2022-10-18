@@ -6,26 +6,22 @@ def DecToBin(n):
     return s + str(n % 2)
 
 
-
-
-def SignedMagnitude(number):
+def ToSigned(number): # Signed magnitude
     sign = "0"
     if(number < 0): 
         sign = "1"
         number = -number
     return sign + DecToBin(number)
 
-class RadixComplement():
-    def Represent(self, number):
+def ToRadix(number): # Radix complement
         pass
 
-class DiminishedRadixComplement():
-    def Represent(self, number):
-        pass
-class Excess():
-    def Represent(self, number):
-        pass
+def ToDRadix(number): # Diminished Radix complement
+    pass
+
+def ToExcess(number, M):
+    pass
 
 
-print(SignedMagnitude(-109))
+print(ToSigned(-109))
 
