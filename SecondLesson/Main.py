@@ -14,14 +14,19 @@ def ToSigned(number): # Signed magnitude
     return sign + DecToBin(number)
 
 def ToRadix(number): # Radix complement
-        pass
+    maximum = 10 ** len(str(number))
+    print(maximum - number)
+    return DecToBin(maximum - number)
+
 
 def ToDRadix(number): # Diminished Radix complement
-    pass
+    maximum = (10 ** len(str(number))) - 1
+    print(maximum - number)
+    return DecToBin(maximum - number)
 
 def ToExcess(number, M):
     pass
 
 
-print(ToSigned(-109))
+print(ToDRadix(735))
 
